@@ -45,6 +45,19 @@ for segment in result['segments']:
 - WhisperX
 - Pyannote.audio
 
+
+
+Further you can edit in the code and add a line where if you want to save the output in .txt file 
+# Set the output file name
+output_file = "transcript.txt"
+
+# Save the transcript to a text file
+transcriber.save_transcript(result, output_file)
+
+print(f"Transcript saved to: {output_file}")
+
+
+
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
@@ -53,3 +66,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ```
 
 Replace `"path/to/your/audio/file.mp4"` with the actual path to your audio file. Also, update the GitHub repository link (`https://github.com/yourusername/whisperx-transcriber.git`) to point to your repository. This README file provides users with instructions on how to install, use, and contribute to your WhisperX Transcriber project.
+
